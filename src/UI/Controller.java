@@ -6,6 +6,4 @@ import javafx.scene.control.TextField;
 public class Controller {
 
     public Button convert_to_cfg_button;
-
-    public TextField path_text_field;
 }
