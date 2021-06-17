@@ -60,13 +60,9 @@ public class Automata {
     public ArrayList<State> getStates() {
         return states;
     }
+
     public void addState(State state) {
         this.states.add(state);
-    }
-
-    public void addNewState(State state) {
-        this.states.add(state);
-        numberOfStates++;
     }
 
     public ArrayList<String> getFinalStates() {
@@ -89,25 +85,11 @@ public class Automata {
         return transitions;
     }
 
-    public Transition findTransition(String source, String destination){
-        for (Transition transition: transitions){
-            if (transition.getSource().equals(source) && transition.getDestination().equals(destination)){
-                return transition;
-            }
-        }
-        return null;
-    }
-
     public void addTransition(Transition transition) {
         this.transitions.add(transition);
     }
 
-    public void addNewTransition(Transition transition) {
-        this.transitions.add(transition);
-        numberOfTransitions++;
-    }
-
-    public void replaceTransition(Transition replaceFrom, Transition replaceTo1, Transition replaceTo2, State newState){
+    public void replaceTransition(Transition replaceFrom, Transition replaceTo1, Transition replaceTo2, State newState) {
         transitions.remove(replaceFrom);
         transitions.add(replaceTo1);
         transitions.add(replaceTo2);

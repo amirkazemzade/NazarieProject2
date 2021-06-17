@@ -4,7 +4,6 @@ import Model.Automata;
 import Model.CFG;
 import Model.Grammar;
 import XML.XMLParser;
-import com.sun.jdi.ArrayReference;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

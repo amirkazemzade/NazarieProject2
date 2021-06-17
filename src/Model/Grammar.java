@@ -3,8 +3,8 @@ package Model;
 import java.util.ArrayList;
 
 public class Grammar {
-    private String start;
-    private ArrayList<String> end;
+    private final String start;
+    private final ArrayList<String> end;
 
     public Grammar(String start) {
         this.start = start;

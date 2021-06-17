@@ -1,14 +1,12 @@
 package Model;
 
-import java.util.ArrayList;
-
 public class Transition {
-    private String name;
-    private String source;
-    private String destination;
-    private String input;
-    private String pop;
-    private String push;
+    private final String name;
+    private final String source;
+    private final String destination;
+    private final String input;
+    private final String pop;
+    private final String push;
 
 
     public Transition(String name, String source, String destination, String input, String pop, String push) {
