@@ -36,7 +36,7 @@ public class Main extends Application {
         primaryStage.show();
 
         controller.convert_to_cfg_button.setOnAction(actionEvent -> {
-            String path = "src/input.xml";
+            String path = "input.xml";
             try {
                 XMLParser.parse(automata, path);
             } catch (ParserConfigurationException | IOException | SAXException e) {
